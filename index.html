@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+<style>
+    .internal{
+        height:100px ; 
+        width: 100px; 
+        background-color: blueviolet;
+        margin: 10px;
+        justify-content: center;
+    }
+</style>
+</head>
+<body>
+   <!-- 1. difference between flex row and flex column ? -->
+
+   <!-- flex row arrange the data horizontally from left to right.
+   while flex column is arrange the data vertically from top to bottom. -->
+
+   <!-- example of flex row: -->
+   <div class="box">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+   </div>
+
+   <!-- example of flex column: -->
+   <div class="boxes">
+    <div class="boxes1">1</div>
+    <div class="boxes2">2</div>
+    <div class="boxes3">3</div>
+    <div class="boxes4">4</div>
+    <div class="boxes5">5</div>
+   </div>
+<br>
+   <!-- 2.Explain inline ,internal and external css ?
+
+   inline css: requires the style attribute placed inside an HTML element.
+   Internal css : requires the style attribute inside the head section 
+   external css : requires the element placed inside the head section of an HTML file. -->
+
+   <div style="height:100px ; width: 100px; background-color: blueviolet; align-items: center; justify-content: center;">box made by inline 
+    css</div>
+<div class="internal">box made by internal css</div>
+<div class="external">box made by external css</div>
+
+
+<!-- 3. Justify-content allows you to do what?
+The CSS Justify-content property defines how the browser distribute space between and around 
+content items along the main axis of a flex container. -->
+
+<div id="main">
+    <div class="submain1"></div>
+    <div class="submain2"></div>
+    <div class="submain3"></div>
+</div>
+
+<!-- 4. difference between absolute and relative positioning ?
+position relative places relative to its current position without changing the layout around it . 
+position absolute places an element relative to its parent's position and the layout around it. -->
+
+<!-- 5. what is grid-template-column used for ?
+The grid-tempate-column property specifies the number of column in a grid layout.  -->
+
+<!-- 5. what is the z-index in css ?
+The z-index property specifies the stack order of an element . An element with greater stack order
+is always in front of an element with a lower stack order. -->
+<div class="container">
+    <div class="container1"></div>
+    <div class="container2"></div>
+</div>
+<!-- 6. what is the difference between padding and margin ?
+
+padding is the difference between element border and element content.
+margin is the space around the margin.
+
+example of containing margin and padding -->
+
+<div class="contain">div contain margin and padding</div>
+
+</body>
+</html>
